@@ -47,7 +47,7 @@
 	(function loop() {
 		var list = Array.from($$('li:not(--oxy-blocker-processed)', wrap));
 		list.forEach(function(item) {
-			var title = $('.info dt b', item).textContent;
+			var title = $('.info dt a', item).textContent;
 			item.classList.add('--oxy-blocker-processed');
 			if (isOxy(title)) {
 				item.classList.add('--oxy-blocker');
