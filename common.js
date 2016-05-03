@@ -29,24 +29,28 @@ var OxyBlocker = (function() {
     style.textContent = css.replace(/{{css:(\w+)}}/gi, function(_, key) {
       return defaultCSS[key];
     });
-
     document.body.appendChild(style);
 
-    var wrap = $(selectors.wrap);
-    (function loop() {
-      var list = Array.from($$(selectors.list, wrap));
-      list.forEach(function(item) {
-        var title = $(selectors.title, item).textContent;
-        item.classList.add('--oxy-blocker-processed');
-        if (isOxy(title)) {
-          item.classList.add('--oxy-blocker');
-        }
-      });
+    var timer = null;
 
-      if (shouldWatch) {
-        setTimeout(loop, 500);
-      }
-    })();
+    var wrap = $(selectors.wrap);
+    var check = function() {
+      if (timer) { clearTimeout(timer); }
+      timer = setTimeout(function() {
+        var list = Array.from($$(selectors.list, wrap));
+        list.forEach(function(item) {
+          var title = $(selectors.title, item).textContent;
+          item.classList.add('--oxy-blocker-processed');
+          if (isOxy(title)) {
+            item.classList.add('--oxy-blocker');
+          }
+        });
+        timer = null;
+      }, 10);
+    };
+
+    wrap.addEventListener('DOMSubtreeModified', check, false);
+    check();
 
   }
 
@@ -59,9 +63,10 @@ var OxyBlocker = (function() {
       /옥시/.test(str) && /숄/.test(str) ||
       /옥시/.test(str) && /표백제/.test(str) ||
       /옥시/.test(str) && /제습제/.test(str) ||
-      /옥시/.test(str) && /섬유\s*유연제/.test(str) ||
-      /Reckitt\s*Benckiser/i.test(str) || 
-      /레킷\s*벤키저/.test(str)
+      /옥시/.test(str) && /섬유유연제/.test(str) ||
+      /옥시/.test(str) && /하마/.test(str) ||
+      /ReckittBenckiser/i.test(str) || 
+      /레킷벤키저/.test(str)
     );
   }
 
