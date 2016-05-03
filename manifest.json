@@ -1,48 +1,48 @@
 {
-	"manifest_version": 2,
-	
-	"name": "Oxy-Blocker",
-	"version": "0.2",
-	"description": "옥시제품 관련 상품 결과 삭제",
-	
-	"icons": {
-		"16": "logo16.png",
-		"48": "logo48.png",
-		"128": "logo128.png"
-	},
-	
-	"permissions": [
-		"http://*/*", "https://*/*"
-	],
+  "manifest_version": 2,
+  
+  "name": "Oxy-Blocker",
+  "version": "0.3",
+  "description": "옥시제품 관련 상품 결과 삭제",
+  
+  "icons": {
+    "16": "logo16.png",
+    "48": "logo48.png",
+    "128": "logo128.png"
+  },
+  
+  "permissions": [
+    "https://search.naver.com/search.naver*",
+    "http://shopping.naver.com/search*",
+    "http://shopping.naver.com/hotdeal*",
+    "http://search.daum.net/search*",
+    "http://shopping.daum.net/search*"
+  ],
 
-	"web_accessible_resources" : [
-		"oxy-blocker-overlay.png",
-		"search.daum.net.js",
-		"search.naver.com.js",
-		"shopping.daum.net.js",
-		"shopping.naver.com.js"
-	],
+  "web_accessible_resources" : [
+    "oxy-blocker-overlay.png"
+  ],
 
-	"content_scripts": [
-		{
-			"matches": [ "https://search.naver.com/search.naver*" ],
-			"js": ["@include.js"], "run_at": "document_end"
-		},
-		{
-			"matches": [ "http://shopping.naver.com/search*" ],
-			"js": ["@include.js"], "run_at": "document_end"
-		},
-		{
-			"matches": [ "http://shopping.naver.com/hotdeal*" ],
-			"js": ["@include.js"], "run_at": "document_end"
-		},
-		{
-			"matches": [ "http://search.daum.net/search*" ],
-			"js": ["@include.js"], "run_at": "document_end"
-		},
-		{
-			"matches": [ "http://shopping.daum.net/search*" ],
-			"js": ["@include.js"], "run_at": "document_end"
-		}
-	]
+  "content_scripts": [
+    {
+      "matches": [ "https://search.naver.com/search.naver*" ],
+      "js": ["common.js", "search.naver.com.js"], "run_at": "document_end"
+    },
+    {
+      "matches": [ "http://shopping.naver.com/search*" ],
+      "js": ["common.js", "shopping.naver.com.js"], "run_at": "document_end"
+    },
+    {
+      "matches": [ "http://shopping.naver.com/hotdeal*" ],
+      "js": ["common.js", "shopping.naver.com.hotdeal.js"], "run_at": "document_end"
+    },
+    {
+      "matches": [ "http://search.daum.net/search*" ],
+      "js": ["common.js", "search.daum.net.js"], "run_at": "document_end"
+    },
+    {
+      "matches": [ "http://shopping.daum.net/search*" ],
+      "js": ["common.js", "shopping.daum.net.js"], "run_at": "document_end"
+    }
+  ]
 }
