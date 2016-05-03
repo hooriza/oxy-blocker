@@ -39,7 +39,9 @@
 			/파워크린|오투액션|옥시크린|쉐리|에어윅|물먹는하마|냄새먹는하마|하마로이드|이지오프뱅|옥시싹싹|하픽|데톨|개비스콘|스트렙실/i.test(str) ||
 			/비트|veet/i.test(str) && /제모/.test(str) ||
 			/옥시/i.test(str) && /피니시/.test(str) ||
-			/옥시/i.test(str) && /숄/.test(str)
+			/옥시/i.test(str) && /숄/.test(str) ||
+			/Reckitt\s*Benckiser/i.test(str) ||
+			/레킷\s*벤키저/g.test(str)
 		);
 	};
 
