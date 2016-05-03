@@ -65,6 +65,8 @@ var OxyBlocker = (function() {
       /옥시/.test(str) && /제습제/.test(str) ||
       /옥시/.test(str) && /섬유유연제/.test(str) ||
       /옥시/.test(str) && /하마/.test(str) ||
+      /듀렉스/.test(str) && /젤/.test(str) ||
+      /durex/i.test(str) && /젤/.test(str) ||
       /ReckittBenckiser/i.test(str) || 
       /레킷벤키저/.test(str)
     );
