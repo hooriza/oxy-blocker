@@ -39,9 +39,10 @@ var OxyBlocker = (function() {
       timer = setTimeout(function() {
         var list = Array.from($$(selectors.list, wrap));
         list.forEach(function(item) {
-          var title = $(selectors.title, item).textContent;
+          var title = $(selectors.title, item);
+          if (!title) { return; }
           item.classList.add('--oxy-blocker-processed');
-          if (isOxy(title)) {
+          if (isOxy(title.textContent)) {
             item.classList.add('--oxy-blocker');
           }
         });
@@ -78,3 +79,7 @@ var OxyBlocker = (function() {
 
 })();
 
+/*
+  11st, interpark, auction, gmarket
+  coupang, tmon, wemakeprice
+*/

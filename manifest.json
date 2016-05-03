@@ -12,11 +12,11 @@
   },
   
   "permissions": [
-    "https://search.naver.com/search.naver*",
-    "http://shopping.naver.com/search*",
-    "http://shopping.naver.com/hotdeal*",
-    "http://search.daum.net/search*",
-    "http://shopping.daum.net/search*"
+    "https://search.naver.com/*",
+    "http://shopping.naver.com/*",
+    "http://search.daum.net/*",
+    "http://shopping.daum.net/*",
+    "http://search.11st.co.kr/*"
   ],
 
   "web_accessible_resources" : [
@@ -43,6 +43,10 @@
     {
       "matches": [ "http://shopping.daum.net/search*" ],
       "js": ["common.js", "shopping.daum.net.js"], "run_at": "document_end"
+    },
+    {
+      "matches": [ "http://search.11st.co.kr/SearchPrdAction.tmall*" ],
+      "js": ["common.js", "search.11st.co.kr.js"], "run_at": "document_end"
     }
   ]
 }
