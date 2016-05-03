@@ -50,7 +50,7 @@ var OxyBlocker = (function() {
       }, 10);
     };
 
-    wrap.addEventListener('DOMSubtreeModified', check, false);
+    wrap.addEventListener('DOMNodeInserted', check, false);
     check();
 
   }
@@ -80,6 +80,6 @@ var OxyBlocker = (function() {
 })();
 
 /*
-  11st, interpark, auction, gmarket
+  interpark, auction, gmarket
   coupang, tmon, wemakeprice
 */
