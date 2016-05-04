@@ -63,6 +63,15 @@
     },
     {
       "matches": [
+        "http://www.auction.co.kr/*",
+        "http://shop.auction.co.kr/*",
+        "http://search.auction.co.kr/*",
+        "http://listings.auction.co.kr/*"
+      ],
+      "js": ["common.js", "sites/auction.co.kr.js"], "run_at": "document_end"
+    },
+    {
+      "matches": [
         "https://www.coupang.com/*",
         "https://coupang.com/*",
         "http://www.coupang.com/*",
@@ -74,6 +83,5 @@
       "matches": [ "http://www.wemakeprice.com/*" ],
       "js": ["common.js", "sites/wemakeprice.com.js"], "run_at": "document_end"
     }
-
   ]
 }
