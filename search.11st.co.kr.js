@@ -23,3 +23,13 @@ OxyBlocker.initialize(css, {
   list: '.type_listing li:not(--oxy-blocker-processed), .recomd_thumblist  li:not(--oxy-blocker-processed)',
   title: 'div.pup_title, em.pub_title'
 }, true);
+
+OxyBlocker.initialize(`
+  div.dlp_shocking_deal li > * {
+    {{css:transition}}
+  }
+`, {
+  wrap: 'div.dlp_shocking_deal',
+  list: 'ul.deal_li li:not(--oxy-blocker-processed)',
+  title: 'div.pub_info em'
+});
