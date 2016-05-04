@@ -80,7 +80,7 @@ var OxyBlocker = (function() {
       /파워크린|오투액션|옥시크린|쉐리|에어윅|물먹는하마|냄새먹는하마|하마로이드|이지오프뱅|옥시싹싹|하픽|데톨|개비스콘|스트렙실/.test(str) ||
       /비트|veet/i.test(str) && /제모|왁스|겨드랑이|크림/.test(str) ||
       /숄/.test(str) && /각질|네일|뒤꿈치|발|하이힐|케어|페디|풋|스무드/.test(str) ||
-      /피니시/.test(str) && /세제|리필/.test(str) || 
+      /피니시/.test(str) && /세제|리필|탭스|텝스|세척|린스/.test(str) || 
       /듀렉스|durex/i.test(str) && /젤/.test(str) ||
       /ReckittBenckiser|레킷벤키저/i.test(str) ||
       DEBUG

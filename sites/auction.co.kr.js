@@ -47,11 +47,12 @@ case 'shop.auction.co.kr':
 
 default:
   OxyBlocker.initialize(css, {
-    wrap: '#contents',
+    wrap: '#container',
     list: [
       'div.today_cont li:not(--oxy-blocker-processed)',
       '.list_wrap .list_view:not(--oxy-blocker-processed)',
-      '.other_items .item:not(--oxy-blocker-processed)'
+      '.other_items .item:not(--oxy-blocker-processed)',
+      '.rvi_slot li:not(--oxy-blocker-processed)'
     ].join(','),
     title: '.item_name, .item_title, .name'
   }, true);
