@@ -56,20 +56,18 @@ var OxyBlocker = (function() {
   }
 
   function isOxy(str) {
+    str = str.trim();
+    if (/(^|[\s\-_\[\(])옥시($|[\s\-_\]\)])/.test(str)) {
+      return true;
+    }
+
     str = str.replace(/\s/g, '');
     return (
       /파워크린|오투액션|옥시크린|쉐리|에어윅|물먹는하마|냄새먹는하마|하마로이드|이지오프뱅|옥시싹싹|하픽|데톨|개비스콘|스트렙실/i.test(str) ||
-      /비트|veet/i.test(str) && /제모/.test(str) ||
-      /옥시/.test(str) && /피니시/.test(str) ||
-      /옥시/.test(str) && /숄/.test(str) ||
-      /옥시/.test(str) && /표백제/.test(str) ||
-      /옥시/.test(str) && /제습제/.test(str) ||
-      /옥시/.test(str) && /섬유유연제/.test(str) ||
-      /옥시/.test(str) && /하마/.test(str) ||
-      /듀렉스/.test(str) && /젤/.test(str) ||
-      /durex/i.test(str) && /젤/.test(str) ||
-      /ReckittBenckiser/i.test(str) || 
-      /레킷벤키저/.test(str)
+      /비트|veet/i.test(str) && /제모|왁스/.test(str) ||
+      /숄/.test(str) && /각질|네일/.test(str) ||
+      /듀렉스|durex/i.test(str) && /젤/.test(str) ||
+      /ReckittBenckiser|레킷벤키저/i.test(str)
     );
   }
 
