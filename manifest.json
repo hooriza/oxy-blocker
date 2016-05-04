@@ -16,7 +16,8 @@
     "http://shopping.naver.com/*",
     "http://search.daum.net/*",
     "http://shopping.daum.net/*",
-    "http://search.11st.co.kr/*"
+    "http://search.11st.co.kr/*",
+    "https://www.coupang.com/*"
   ],
 
   "web_accessible_resources" : [
@@ -47,6 +48,10 @@
     {
       "matches": [ "http://search.11st.co.kr/SearchPrdAction.tmall*" ],
       "js": ["common.js", "search.11st.co.kr.js"], "run_at": "document_end"
+    },
+    {
+      "matches": [ "https://www.coupang.com/np/*" ],
+      "js": ["common.js", "coupang.com.js"], "run_at": "document_end"
     }
   ]
 }
