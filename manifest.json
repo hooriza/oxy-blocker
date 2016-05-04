@@ -50,7 +50,7 @@
       "js": ["common.js", "search.11st.co.kr.js"], "run_at": "document_end"
     },
     {
-      "matches": [ "https://www.coupang.com/np/*" ],
+      "matches": [ "https://www.coupang.com/*" ],
       "js": ["common.js", "coupang.com.js"], "run_at": "document_end"
     }
   ]
