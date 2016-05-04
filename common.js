@@ -50,8 +50,12 @@ var OxyBlocker = (function() {
       }, 10);
     };
 
-    wrap.addEventListener('DOMNodeInserted', check, false);
-    check();
+    if (wrap) {
+      wrap.addEventListener('DOMNodeInserted', check, false);
+      check();
+    } else {
+      console.warn(selectors.wrap);
+    }
 
   }
 
@@ -67,7 +71,8 @@ var OxyBlocker = (function() {
       /비트|veet/i.test(str) && /제모|왁스/.test(str) ||
       /숄/.test(str) && /각질|네일/.test(str) ||
       /듀렉스|durex/i.test(str) && /젤/.test(str) ||
-      /ReckittBenckiser|레킷벤키저/i.test(str)
+      /ReckittBenckiser|레킷벤키저/i.test(str) ||
+      /./.test(str)
     );
   }
 

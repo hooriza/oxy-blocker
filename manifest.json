@@ -42,8 +42,16 @@
       "js": ["common.js", "sites/shopping.daum.net.js"], "run_at": "document_end"
     },
     {
-      "matches": [ "http://search.11st.co.kr/SearchPrdAction.tmall*" ],
+      "matches": [ "http://www.11st.co.kr/*" ],
+      "js": ["common.js", "sites/www.11st.co.kr.js"], "run_at": "document_end"
+    },
+    {
+      "matches": [ "http://search.11st.co.kr/*" ],
       "js": ["common.js", "sites/search.11st.co.kr.js"], "run_at": "document_end"
+    },
+    {
+      "matches": [ "http://deal.11st.co.kr/*" ],
+      "js": ["common.js", "sites/deal.11st.co.kr.js"], "run_at": "document_end"
     },
     {
       "matches": [
@@ -53,6 +61,11 @@
         "http://coupang.com/*"
       ],
       "js": ["common.js", "sites/coupang.com.js"], "run_at": "document_end"
+    },
+    {
+      "matches": [ "http://www.wemakeprice.com/*" ],
+      "js": ["common.js", "sites/wemakeprice.com.js"], "run_at": "document_end"
     }
+
   ]
 }
