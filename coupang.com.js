@@ -1,6 +1,7 @@
 var css = `
   .--oxy-blocker {
     {{css:item}}
+    background-color:#fff !important;
   }
 
   .--oxy-blocker::after {

@@ -12,12 +12,8 @@
   },
   
   "permissions": [
-    "https://search.naver.com/*",
-    "http://shopping.naver.com/*",
-    "http://search.daum.net/*",
-    "http://shopping.daum.net/*",
-    "http://search.11st.co.kr/*",
-    "https://www.coupang.com/*"
+    "https://*/*",
+    "http://*/*"
   ],
 
   "web_accessible_resources" : [
@@ -50,7 +46,12 @@
       "js": ["common.js", "search.11st.co.kr.js"], "run_at": "document_end"
     },
     {
-      "matches": [ "https://www.coupang.com/*" ],
+      "matches": [
+        "https://www.coupang.com/*",
+        "https://coupang.com/*",
+        "http://www.coupang.com/*",
+        "http://coupang.com/*"
+      ],
       "js": ["common.js", "coupang.com.js"], "run_at": "document_end"
     }
   ]
