@@ -23,27 +23,27 @@
   "content_scripts": [
     {
       "matches": [ "https://search.naver.com/search.naver*" ],
-      "js": ["common.js", "search.naver.com.js"], "run_at": "document_end"
+      "js": ["common.js", "sites/search.naver.com.js"], "run_at": "document_end"
     },
     {
       "matches": [ "http://shopping.naver.com/search*" ],
-      "js": ["common.js", "shopping.naver.com.js"], "run_at": "document_end"
+      "js": ["common.js", "sites/shopping.naver.com.js"], "run_at": "document_end"
     },
     {
       "matches": [ "http://shopping.naver.com/hotdeal*" ],
-      "js": ["common.js", "shopping.naver.com.hotdeal.js"], "run_at": "document_end"
+      "js": ["common.js", "sites/shopping.naver.com.hotdeal.js"], "run_at": "document_end"
     },
     {
       "matches": [ "http://search.daum.net/search*" ],
-      "js": ["common.js", "search.daum.net.js"], "run_at": "document_end"
+      "js": ["common.js", "sites/search.daum.net.js"], "run_at": "document_end"
     },
     {
       "matches": [ "http://shopping.daum.net/search*" ],
-      "js": ["common.js", "shopping.daum.net.js"], "run_at": "document_end"
+      "js": ["common.js", "sites/shopping.daum.net.js"], "run_at": "document_end"
     },
     {
       "matches": [ "http://search.11st.co.kr/SearchPrdAction.tmall*" ],
-      "js": ["common.js", "search.11st.co.kr.js"], "run_at": "document_end"
+      "js": ["common.js", "sites/search.11st.co.kr.js"], "run_at": "document_end"
     },
     {
       "matches": [
@@ -52,7 +52,7 @@
         "http://www.coupang.com/*",
         "http://coupang.com/*"
       ],
-      "js": ["common.js", "coupang.com.js"], "run_at": "document_end"
+      "js": ["common.js", "sites/coupang.com.js"], "run_at": "document_end"
     }
   ]
 }
