@@ -55,6 +55,14 @@
     },
     {
       "matches": [
+        "http://www.gmarket.co.kr/*",
+        "http://category.gmarket.co.kr/*",
+        "http://search.gmarket.co.kr/*"
+      ],
+      "js": ["common.js", "sites/gmarket.co.kr.js"], "run_at": "document_end"
+    },
+    {
+      "matches": [
         "https://www.coupang.com/*",
         "https://coupang.com/*",
         "http://www.coupang.com/*",

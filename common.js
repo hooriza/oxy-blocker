@@ -1,3 +1,5 @@
+var DEBUG = false;
+
 var OxyBlocker = (function() {
 
   var $ = function(s,d) { return (d||document).querySelector(s); };
@@ -53,7 +55,7 @@ var OxyBlocker = (function() {
     if (wrap) {
       wrap.addEventListener('DOMNodeInserted', check, false);
       check();
-    } else {
+    } else if (DEBUG) {
       console.warn(selectors.wrap);
     }
 
@@ -72,7 +74,7 @@ var OxyBlocker = (function() {
       /숄/.test(str) && /각질|네일/.test(str) ||
       /듀렉스|durex/i.test(str) && /젤/.test(str) ||
       /ReckittBenckiser|레킷벤키저/i.test(str) ||
-      /./.test(str)
+      DEBUG
     );
   }
 
