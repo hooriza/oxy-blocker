@@ -72,6 +72,17 @@
     },
     {
       "matches": [
+        "http://interpark.com/shopping/*",
+        "http://www.interpark.com/shopping/*",
+        "http://nsearch.interpark.com/*",
+        "http://interpark.com/display/*",
+        "http://www.interpark.com/display/*"
+      ],
+      "js": ["common.js", "sites/interpark.com.js"], "run_at": "document_end",
+      "all_frames" : true
+    },
+    {
+      "matches": [
         "https://www.coupang.com/*",
         "https://coupang.com/*",
         "http://www.coupang.com/*",

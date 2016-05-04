@@ -1,4 +1,4 @@
-var DEBUG = true;
+var DEBUG = false;
 
 var OxyBlocker = (function() {
 
@@ -41,6 +41,14 @@ var OxyBlocker = (function() {
       timer = setTimeout(function() {
         var list = Array.from($$(selectors.list, wrap));
         list.forEach(function(item) {
+          if (typeof selectors.title == 'function') {
+            var title = selectors.title(item);
+            item.classList.add('--oxy-blocker-processed');
+            if (isOxy(title)) {
+              item.classList.add('--oxy-blocker');
+            }
+            return;
+          }
           var title = $(selectors.title, item);
           if (!title) { return; }
           item.classList.add('--oxy-blocker-processed');
@@ -85,6 +93,6 @@ var OxyBlocker = (function() {
 })();
 
 /*
-  interpark, auction, gmarket
-  coupang, tmon, wemakeprice
+  interpark
+  tmon
 */
