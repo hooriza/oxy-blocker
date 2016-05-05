@@ -93,6 +93,10 @@
     {
       "matches": [ "http://www.wemakeprice.com/*" ],
       "js": ["common.js", "sites/wemakeprice.com.js"], "run_at": "document_end"
+    },
+    {
+      "matches": [ "http://www.gsshop.com/*" ],
+      "js": ["common.js", "sites/gsshop.com.js"], "run_at": "document_end"
     }
   ]
 }
