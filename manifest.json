@@ -97,6 +97,14 @@
     {
       "matches": [ "http://www.gsshop.com/*" ],
       "js": ["common.js", "sites/gsshop.com.js"], "run_at": "document_end"
+    },
+    {
+      "matches": [
+        "http://www.ssg.com/*",
+        "http://www.ssg.com/search*"
+      ],
+      "js": ["common.js", "sites/ssg.com.js"], "run_at": "document_end",
+      "all_frames" : true
     }
   ]
 }
