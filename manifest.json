@@ -101,7 +101,11 @@
     {
       "matches": [
         "http://www.ssg.com/*",
-        "http://www.ssg.com/search*"
+        "http://www.ssg.com/search*",
+        "http://shinsegaemall.ssg.com/*",
+        "http://department.ssg.com/*",
+        "http://emart.ssg.com/*",
+        "http://traders.ssg.com/*"
       ],
       "js": ["common.js", "sites/ssg.com.js"], "run_at": "document_end",
       "all_frames" : true
