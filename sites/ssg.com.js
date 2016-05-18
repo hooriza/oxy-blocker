@@ -31,3 +31,49 @@ OxyBlocker.initialize(css, {
 	}
 },true);
 
+OxyBlocker.initialize(css, {
+  wrap: '#container_sm',
+  list: 'li.csm_li',
+  title: function(el) {
+     return el.querySelector('.csm_tit').textContent;
+  }
+},true);
+
+// emart mall Brand
+OxyBlocker.initialize(css, {
+  wrap: '#item_list',
+  list: 'tr.item_emall',
+  title: function(el) {
+     return el.querySelectorAll('.title a')[4].textContent;
+  }
+},true);
+
+// emart mall Brand
+OxyBlocker.initialize(css, {
+  wrap: '#item_list',
+  list: 'tr.item_emall',
+  title: function(el) {
+     return el.querySelector('#search_result_brand').textContent
+  }
+},true);
+
+// Traders
+OxyBlocker.initialize(css, {
+  wrap: '#item_list',
+  list: 'tr.item_traders',
+  title: function(el) {
+     return el.querySelectorAll('.title')[0].textContent;
+  }
+},true);
+
+
+// Traders 추천
+OxyBlocker.initialize(css, {
+  wrap: '#container',
+  list: 'td.item_traders',
+  title: function(el) {
+     return el.querySelector('.title a').textContent;
+  }
+},true);
+
+
