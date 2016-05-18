@@ -105,7 +105,8 @@
         "http://shinsegaemall.ssg.com/*",
         "http://department.ssg.com/*",
         "http://emart.ssg.com/*",
-        "http://traders.ssg.com/*"
+        "http://traders.ssg.com/*",
+        "http://boons.ssg.com/*"
       ],
       "js": ["common.js", "sites/ssg.com.js"], "run_at": "document_end",
       "all_frames" : true

@@ -67,6 +67,13 @@ OxyBlocker.initialize(css, {
 },true);
 
 
-
+// Traders 추천
+OxyBlocker.initialize(css, {
+  wrap: '#container',
+  list: 'td.item_traders',
+  title: function(el) {
+     return el.querySelector('.title a').textContent;
+  }
+},true);
 
 
