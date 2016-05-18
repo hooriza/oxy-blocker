@@ -15,6 +15,9 @@ https://chrome.google.com/webstore/detail/oxy-blocker/ehmeofbfhnniodmnlnhmbjleen
 * 쿠팡
 * SSG Mall
 * 쿠폰차트
+* 다나와
+* 에누리
+* 비비
 
 ## 기타
 * 오작동에 대한 제보 주실 때 캡쳐이미지나 확인 할 수 있는 쇼핑몰 URL 을 주시면 큰 도움이 됩니다~

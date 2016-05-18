@@ -2,7 +2,7 @@
   "manifest_version": 2,
   
   "name": "Oxy-Blocker",
-  "version": "0.93",
+  "version": "0.95",
   "description": "옥시제품 관련 상품 결과 삭제",
   
   "icons": {
@@ -111,6 +111,31 @@
         "http://couponchart.co.kr/*"
       ],
       "js": ["common.js", "sites/couponchart.co.kr.js"], "run_at": "document_end",
+      "all_frames" : true
+    },
+    {
+      "matches": [
+        "http://search.danawa.com/*"
+      ],
+      "js": ["common.js", "sites/danawa.com.js"], "run_at": "document_end",
+      "all_frames" : true
+    },
+    {
+      "matches": [
+        "http://www.enuri.com/search/*",
+        "http://enuri.com/search/*"
+      ],
+      "js": ["common.js", "sites/enuri.com.js"], "run_at": "document_end",
+      "all_frames" : true
+    },
+    {
+      "matches": [
+        "http://www.bb.co.kr/search/*",
+        "http://bb.co.kr/search/*",
+        "http://www.bb.co.kr/cate/*",
+        "http://bb.co.kr/cate/*"
+      ],
+      "js": ["common.js", "sites/bb.co.kr.js"], "run_at": "document_end",
       "all_frames" : true
     }
   ]
