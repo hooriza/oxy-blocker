@@ -101,7 +101,7 @@
     {
       "matches": [
         "http://www.ssg.com/*",
-        "http://www.ssg.com/search*",
+        "http://www.ssg.com/search*"
       ],
       "js": ["common.js", "sites/ssg.com.js"], "run_at": "document_end",
       "all_frames" : true
@@ -110,7 +110,7 @@
       "matches": [
         "http://shinsegaemall.ssg.com/*",
         "http://department.ssg.com/*",
-        "http://emart.ssg.com/*",
+        "http://emart.ssg.com/*"
       ],
       "js": ["common.js", "sites/part1.ssg.com.js"], "run_at": "document_end",
       "all_frames" : true
