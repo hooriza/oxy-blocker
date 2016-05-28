@@ -22,11 +22,23 @@ var css = `
   }
 `;
 
-
+// Traders
 OxyBlocker.initialize(css, {
-	wrap: '#idProductImg',
-	list: 'div.itembx',
-	title: function(el) {
-   	 return el.querySelector('.subject').textContent;
-	}
+  wrap: '#item_list',
+  list: 'tr.item_traders',
+  title: function(el) {
+     return el.querySelectorAll('.title')[0].textContent;
+  }
 },true);
+
+
+// Traders 추천
+OxyBlocker.initialize(css, {
+  wrap: '#container',
+  list: 'td.item_traders',
+  title: function(el) {
+     return el.querySelector('.title a').textContent;
+  }
+},true);
+
+
