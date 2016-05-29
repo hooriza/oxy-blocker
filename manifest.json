@@ -108,7 +108,8 @@
     },
     {
       "matches": [
-        "http://couponchart.co.kr/*"
+        "http://couponchart.co.kr/*",
+        "http://coocha.co.kr/*"
       ],
       "js": ["common.js", "sites/couponchart.co.kr.js"], "run_at": "document_end",
       "all_frames" : true
