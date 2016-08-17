@@ -83,7 +83,6 @@ var OxyBlocker = (function() {
       /피니시/.test(str) && /세제|리필|탭스|텝스|세척|린스/.test(str) || 
       /듀렉스|durex/i.test(str) && /젤/.test(str) ||
       /ReckittBenckiser|레킷벤키저/i.test(str) ||
-      /불스원|Bullsone|Bullsoneshot|레인오케이|레인OK|폴라패밀리/i.test(str) ||
       /퍼스트클래스/i.test(str) && /왁스|방향|컴파운드|광택|크리너|카샴푸|쉴드|제거제/.test(str) ||
       /무브프리|MOVEFREE|Schiff/i.test(str) ||
       DEBUG
